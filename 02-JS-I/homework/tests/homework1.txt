@@ -1,0 +1,10 @@
+variables: son como cajas que guardan información. Se les asigna un nombre. Y adentro pueden contener texto, números, valores y cosas más raras, como fórmulas sin nombre y otros cálculos.
+
+Strings: es texto. Puede ser una palabra o una frase. Como puede ser muy variado, se coloca entre comillas para marcarlo. Puede estar contenido dentro de una variable.
+Funciones(argumentos, return): las funciones son como una acción a realizar. Antes de indicar qué hacer, se declara dentro de la función los argumentos sobre los cuales se va a trabajar.
+Cuando la función termina, si queremos que nos de fuera de ésta un resultado, usamos "return". Ya que lo interno de una función pertenece a otro ámbito (no se puede acceder directamente).
+
+Declaraciones if: se usa para realizar una comparación y en base a eso obtener un resultado. Sigue la idea de que "Si tal cosa es verdadera, hacer lo siguiente.
+Donde "tal cosa" es algún tipo de comparación.
+
+Valores Booleanos: son valores que representan solo dos posibles resupuestas, Verdadero y Falso. Que también puede entenderse como Si y NO o 1 y 0. Se usa para  por ejemplo las declaracines if.
