@@ -1,0 +1,5 @@
+For: se usa para bucles de acciones repetitivas. Se divide en 3 partes, valor inicial, la condición a cumplir para ejecutar el bloque y el valor al final de la ejecución.
+Para valuar operaciones lógicas que concluyan en verdadero o falso, se usan los siguientes símbolos.
+&& para Y
+|| para O
+! para lo Opuesto
