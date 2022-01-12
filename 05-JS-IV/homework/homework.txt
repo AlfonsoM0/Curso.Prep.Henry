@@ -1,0 +1,83 @@
+Objeto
+
+Si una variable es como una cajita con nombre que guarda un dato. El objeto es como una caja que guarda otras adentro.
+
+Se crean como los Array, pero con {} en lugar de []. Y adentro se enlistan "palabraClave: Valor" (o "Key: Value"). Importante, cada Key:Value va separado por una COMA (,).
+___________________________________
+const user = {
+    username: 'juan.perez',
+    password: 'loremipsumpwd123',
+    lovesJavascript: true,
+    favoriteNumber: 42
+};
+___________________________________
+
+
+ACCEDER a los valores
+
+Las KEY son endefinitiva propiedades del objeto y se usan para acceder a los valores.
+
+Por ejemplo "user.username" me dará "juan.perez".
+
+Otra forma menos bonita es usar "user["username"]". Donde se puede también reemplazar a "username" pur una variable que que contenga ese texto, quedando "user[nombreDeLaVariable]" siendo
+nombreDeLaVariable = "username".
+
+
+
+ASIGNAR valores
+
+La forma fácil "user.username = "nuevoNombre";"
+
+ELIMINAR valores
+
+La forma fácil "delete user.username;". Pero es buena práctica no eliminar y dejar el valor undefined.
+
+
+
+METODOS
+
+En los Array .length, .push, .pop, etc., son todos métodos.
+
+Para los objetos el método es cuando el Value de una Key es una function.
+
+En este caso, si el username tuvise una función, para ejecutarla el método será "user.username();"
+
+
+
+BUCLE for...in
+
+Así como los Array trabajan con for. En los objetos usamos for...in. Pero se arma diferente.
+
+___________________________________
+const usuario = {
+    username: 'juan.perez',
+    password: 'loremipsumpwd123',
+    lovesJavascript: true,
+    favoriteNumber: 42
+};
+
+for (let clave in usuario){
+    console.log(clave);
+    console.log(usuario[clave]);
+}
+
+// username
+// 'juan.perez'
+// password
+// 'loremipsumpwd123'
+// lovesJavascript
+// true
+// favoriteNumber
+// 42
+___________________________________
+
+Acá se crea la variable "clave" para que nos de las KEY.
+Y el usuario[clave] nos da los VALUE.
+
+
+
+THIS
+
+Se una para convocar algo dentro de un determinado contexto. Por ejemplo "this.username" dentro de una función dentro de un objeto, busca el valor de la key username.
+
+Pero ojo! porque This puede trabajar de formas misteriosas. Varía mucho como puede actuar en relación a cómo se ejecuta.
