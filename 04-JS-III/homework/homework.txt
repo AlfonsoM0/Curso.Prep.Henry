@@ -1,0 +1,22 @@
+Arrays
+
+Un Array, en español una Colección, es una lista de datos llamados elementos. Se crea como una variable constante y la lista de datos internos va entre corchetes.
+
+nombreDelArray = ["Pablito", "Pepito, ..."];
+
+Podría decirse que si una variable es como una cajita que guarda un dato, el array es una cajita con subdivisiones paralelas para guardar varios datos.
+
+Se puede crear el Array vacío y luego agregar los elementos, quitarlos, consultarlos, etcétera, usando los siguientes métodos:
+
+nombreDelArray[valor del 0 al n]
+accedes a un elemento dentro del array, donde 0 es el primero y n es el último dato (cantidad de datos -1).
+
+nombreDelArray[nombresEstudiantes.length - 1] para acceder al último elemento. ".lenght" nos da la cantidad de elementos y le restamos 1 para determinar la posición del último.
+
+nombreDelArray.push(elemento nuevo al final)
+
+nombreDelArray.pop() elimina le último elemento.
+
+nombreDelArray.unshift(elemento nuevo al inicio)
+
+nombreDelArray.shift() elimina el primer elemento.
