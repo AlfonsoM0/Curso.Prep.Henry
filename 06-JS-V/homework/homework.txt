@@ -1,0 +1,7 @@
+PROTOTYPE
+
+Es un mecanismo mediante el cual un objeto hereda las características de su predecesor, formando una cadena de herencia.
+
+De tal manera que si el objeto no tiene un método buscado, se lo busca en su predecesor, un eslabón de cadena hacia atrás.
+
+Constructor es el "hijo" del que deriva la nueva clase.
