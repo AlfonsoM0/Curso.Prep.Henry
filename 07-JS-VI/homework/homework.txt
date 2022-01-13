@@ -1,0 +1,22 @@
+FUNCIONES CALLBACK
+
+Son funciones que invocan a otras funciones. Es decir que la función B llama a una función A, le pasa los datos, y recibe una respuesta (un call back) con lo solicitado listo para aplicarlo.
+
+// Creamos la función para saludar a un usuario.
+
+function decirHolaAlUsuario(usuario) {
+    return 'Hola ' + usuario + '!';
+}
+
+// Creamos la función que realiza la llamada a la función anterior, y recibe como devolución el saludo solicitado.
+
+function crearSaludo(datoEnviado, funcionSolicitada) {
+    return funcionSolicitada(datoEnviado);
+}
+
+* "crearSaludo" es la función Callback.
+* "datoEnviado" es el elemento, dato, que se manda.
+* "funcionSolicitada" es la función a la que se manda el pedido.
+* "crearSaludo" retorna el resultado de la función solicitada (con el correspondiente dato enviado).
+
+crearSaludo("Alfonso", decirHolaAlUsuario); // "Hola ALfonso!"
